@@ -1,4 +1,4 @@
 <fedora>
-<h1> Hello { title }</h1>
+<h1> Hello { opts.title }</h1>
 
 </fedora>
