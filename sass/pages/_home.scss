@@ -1,0 +1,14 @@
+.about {
+  color: $primary-color;
+
+  & img {
+    box-shadow: 0 0 5px 1px $primary-color-light;
+    border-radius: 100%;
+  //   display: inline-block;
+  //   float: left;
+  //   margin-right: 10px;
+  }
+  & h4 {
+    padding-top: 80px;
+  }
+}

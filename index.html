@@ -2,15 +2,21 @@
 <html lang="ru">
 <head>
 <script src="https://cdn.jsdelivr.net/riot/2.3/riot+compiler.min.js"></script>
+<!-- <script src="./node_modules/riot/riot+compiler.min.js"></script> -->
+<link rel="stylesheet" href="./stylesheets/style.css">
 	<meta charset="UTF-8">
 	<title>MatH</title>
 </head>
 <body>
-	<h1>Hello this is </h1>
+	<!-- <h1>Hello this is </h1> -->
 <fedora></fedora>
+
+<hr>
 <script src="./tag/fedora.tag" type="riot/tag"></script>
+<script src="./tag/news.tag" type="riot/tag"></script>
 <script>
-	riot.mount('fedora', { title: 'UserName' })
+	riot.mount('fedora')
+	riot.mount('news')
 </script>
 </body>
 </html>
