@@ -1,14 +1,26 @@
 .about {
+  height: 450px;
   color: $primary-color;
+  background-image: url(/images/bg_04.png);
+  background-size: cover;
+  background-position: center center;
+  border-radius: 20px;
 
   & img {
-    box-shadow: 0 0 5px 1px $primary-color-light;
     border-radius: 100%;
-  //   display: inline-block;
-  //   float: left;
-  //   margin-right: 10px;
+    width: 100px;
+    height: auto;
+    margin-top: 15px;
+      &:hover {
+        box-shadow: 0 0 0 5px $danger-color;
+      }
   }
   & h4 {
-    padding-top: 80px;
+    // padding-left: 300px;
+    // padding-right: 20px;
+    // padding-top: 60px;
+    font-size: 25px;
+    color: #fff;
+    text-align: right;
   }
 }

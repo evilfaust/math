@@ -2,8 +2,8 @@
 	"data": [
 		{
 			"id": 0,
-			"title": "Первая статья",
-			"content": "Содержание первой статьи",
+			"title": "Узнай ученого и получи + 1",
+			"content": "условия: - Узнать ученого - Первым сказать кто он(она) такой и что он(она) сделал(ла)",
 			"imgUrl": "./images/images_00.png" 
 		},
 		{
@@ -29,6 +29,12 @@
 	"about":
 		{
 			"content": "Данный сайт будет посвящен математическим или около математическим темам. Так же здесь я буду публиковать домашние контрольные, самостоятельные работы и материалы для подготовки к ЕГЭ и ОГЭ по математике.",
-			"imgUrl": "./images/about.png"
+			"imgUrl": {
+				"primary": "./images/logo-primary.png",
+				"danger": "./images/logo-danger.png",
+				"sussecc": "./images/logo-sussecc.png",
+				"info": "./images/logo-info.png",
+				"warning": "./images/logo-warning.png"
+				}
 		}
 }
