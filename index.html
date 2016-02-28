@@ -3,6 +3,10 @@
 <head>
 <script src="https://cdn.jsdelivr.net/riot/2.3/riot+compiler.min.js"></script>
 <!-- <script src="./node_modules/riot/riot+compiler.min.js"></script> -->
+<!-- LaTeX -->
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.5.1/katex.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.5.1/katex.min.js"></script>
+
 <link rel="stylesheet" href="./stylesheets/style.css">
 	<meta charset="UTF-8">
 	<title>MatH</title>
@@ -12,11 +16,19 @@
 <fedora></fedora>
 
 <hr>
+<div id="math"></div>
 <script src="./tag/fedora.tag" type="riot/tag"></script>
 <script src="./tag/news.tag" type="riot/tag"></script>
 <script>
-	riot.mount('fedora')
-	riot.mount('news')
+var html = katex.renderToString("c = \\pm\\sqrt{a^2 + b^2}");
+document.getElementById('math').innerHTML = this.html;
+
+
+	riot.mount('fedora', { tex: "this.html" })
+	// riot.mount('news')
 </script>
+
+
+
 </body>
 </html>

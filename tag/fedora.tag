@@ -4,6 +4,7 @@
 			<div class="about">
 				<div class="logo"><img src={ about.imgUrl.danger } class={ this.ani } onmouseover={ addani } onmouseout={ delani }></div>
 				<div class="title"><h4> { about.content }</h4></div>
+				<div> { opts.tex } </div>
 			</div>
 		</div>
 	<div class="row">
