@@ -1,7 +1,9 @@
 .about {
+  display: flex;
+  padding: 20px;
   height: 450px;
   color: $primary-color;
-  background-image: url(./images/bg_04.png);
+  background-image: url(../../images/bg_02.png);
   background-size: cover;
   background-position: center center;
   border-radius: 20px;
@@ -12,7 +14,7 @@
     height: auto;
     margin-top: 15px;
       &:hover {
-        box-shadow: 0 0 0 5px $danger-color;
+        box-shadow: 0 0 0 2px $danger-color;
       }
   }
   & h4 {
@@ -22,5 +24,9 @@
     font-size: 25px;
     color: #fff;
     text-align: right;
+  }
+  & .logo {
+    // padding-left: 20px;
+    
   }
 }

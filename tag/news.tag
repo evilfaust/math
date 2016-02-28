@@ -1,5 +1,5 @@
 <news>
-	<div class="news col-md-2" each={ parent.items }>
+	<div class="news" each={ parent.items }>
 		<div class="title">{ title} </div>
 		<div class="content">{ content } </div>
 		<div class="images"><img src={ imgUrl } /></div>
