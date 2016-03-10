@@ -14,17 +14,21 @@
 <body>
 	<!-- <h1>Hello this is </h1> -->
 <fedora></fedora>
-
+<kangaroo-test></kangaroo-test>
 <hr>
 <div id="math"></div>
 <script src="./tag/fedora.tag" type="riot/tag"></script>
 <script src="./tag/news.tag" type="riot/tag"></script>
+<script src="./tag/kangaroo-test.tag" type="riot/tag"></script>
+<script src="./tag/rate-test.tag" type="riot/tag"></script>
+
 <script>
 var html = katex.renderToString("c = \\pm\\sqrt{a^2 + b^2}");
 document.getElementById('math').innerHTML = this.html;
 
 
 	riot.mount('fedora', { tex: "this.html" })
+	riot.mount('kangaroo-test')
 	// riot.mount('news')
 </script>
 

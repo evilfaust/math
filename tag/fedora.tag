@@ -27,6 +27,6 @@ this.about = news.about
 addani(e) { this.ani = "animated flip" }
 delani(e) { this.ani = null }
 
-console.log('Текст ' + this.about.imgUrl)
+// console.log('Текст ' + this.about.imgUrl)
 
 </fedora>

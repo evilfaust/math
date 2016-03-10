@@ -30,3 +30,17 @@
     
   }
 }
+
+.rate {
+	background-color: aqua;
+	padding: 10px;
+	margin: 10px;
+	width: 20%;
+	border-radius: 10px;
+	display: inline-block;
+	& h4 {
+		border-bottom: 4px solid red;
+		text-align: center;
+		margin-bottom: 0;
+	}
+}
