@@ -27,20 +27,25 @@
   }
   & .logo {
     // padding-left: 20px;
-    
+
   }
 }
 
 .rate {
 	background-color: aqua;
 	padding: 10px;
-	margin: 10px;
-	width: 20%;
+	margin: 5px;
 	border-radius: 10px;
-	display: inline-block;
-	& h4 {
-		border-bottom: 4px solid red;
-		text-align: center;
-		margin-bottom: 0;
-	}
+  display: inline-flex;
+    & .items {
+
+      	& h4 {
+      		border-bottom: 4px solid red;
+      		text-align: center;
+      		margin-bottom: 0;
+    	}
+  }
+  & span {
+    margin: 10px;
+  }
 }
