@@ -8,6 +8,7 @@
 			</div>
 		</div>
 	<div class="row">
+		<nav></nav>
 		<news></news>
 	</div>
 </div>
@@ -26,6 +27,13 @@ this.about = news.about
 
 addani(e) { this.ani = "animated flip" }
 delani(e) { this.ani = null }
+
+	this.nav = [
+		{ link: '/About', content: 'About'},
+		{ link: '/Home', content: 'Home' },
+		{ link: '/Book', content: 'Books' },
+		{ link: '/news', content: 'News'}
+	]
 
 // console.log('Текст ' + this.about.imgUrl)
 

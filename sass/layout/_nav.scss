@@ -1,0 +1,24 @@
+.navigation {
+    & ul {
+      display: flex;
+    }
+    & li {
+      display: flex;
+      justify-content: space-between;
+      align-items: stretch;
+      margin: 5px;
+      & a {
+        border: 2px solid $primary-color;
+        padding: 3px 20px 3px 20px;
+        border-radius: 5px;
+        text-decoration: none;
+        cursor: pointer;
+        color: $primary-color;
+        text-align: center;
+        &:hover {
+          background-color: $primary-color;
+          color: #fff;
+        }
+      }
+    }
+}

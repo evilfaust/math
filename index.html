@@ -14,22 +14,28 @@
 <body>
 	<!-- <h1>Hello this is </h1> -->
 <fedora></fedora>
-<kangaroo-test></kangaroo-test>
 <hr>
+<content></content>
+<hr >
 <div id="math"></div>
 <script src="./tag/fedora.tag" type="riot/tag"></script>
 <script src="./tag/news.tag" type="riot/tag"></script>
-<script src="./tag/kangaroo-test.tag" type="riot/tag"></script>
-<script src="./tag/rate-test.tag" type="riot/tag"></script>
+<script src="./tag/nav.tag" type="riot/tag"></script>
+<script src="./tag/content.tag" type="riot/tag"></script>
+<script src="./tag/book.tag" type="riot/tag"></script>
+
 
 <script>
 var html = katex.renderToString("c = \\pm\\sqrt{a^2 + b^2}");
 document.getElementById('math').innerHTML = this.html;
 
 
-	riot.mount('fedora', { tex: "this.html" })
-	riot.mount('kangaroo-test')
+	riot.mount('fedora')
+	riot.mount('content')
 	// riot.mount('news')
+	riot.route('/Home', function(name) {
+  	console.log('The list of fruits')
+})
 </script>
 
 

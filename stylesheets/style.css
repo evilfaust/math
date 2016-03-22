@@ -539,6 +539,74 @@ news {
       font-size: 18px;
       color: #1a7ab4; }
 
+.navigation ul {
+  display: flex; }
+
+.navigation li {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  margin: 5px; }
+  .navigation li a {
+    border: 2px solid #661177;
+    padding: 3px 20px 3px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    color: #661177;
+    text-align: center; }
+    .navigation li a:hover {
+      background-color: #661177;
+      color: #fff; }
+
+.books {
+  display: inline-flex;
+  align-items: stretch;
+  flex-wrap: wrap; }
+  .books .books-items {
+    padding: 4px 4px 4px 4px;
+    margin: 5px;
+    width: 22%;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.23), 0 5px 10px rgba(0, 0, 0, 0.19); }
+    .books .books-items:hover {
+      box-shadow: 0 4px 5px rgba(77, 173, 231, 0.23), 0 5px 10px rgba(77, 173, 231, 0.19); }
+    .books .books-items .title {
+      text-align: center; }
+    .books .books-items .autor {
+      padding: 4px;
+      border-radius: 3px; }
+    .books .books-items .link {
+      color: #844092;
+      text-align: center; }
+      .books .books-items .link a {
+        background-color: #844092;
+        padding: 0px 5px 2px 5px;
+        border-radius: 2px;
+        text-decoration: none;
+        cursor: pointer;
+        color: #fff; }
+        .books .books-items .link a:hover {
+          background-color: #510d5f; }
+    .books .books-items .description {
+      border-radius: 3px;
+      padding: 3px; }
+    .books .books-items img {
+      width: 50%;
+      display: block;
+      margin: 0 auto;
+      margin-top: 4px;
+      margin-bottom: 4px; }
+
+.text-underline {
+  text-decoration: underline; }
+
+.text-title {
+  font-size: 1.2em;
+  font-family: serif; }
+
+.text-center {
+  text-align: center; }
+
 .about {
   display: flex;
   padding: 20px;
@@ -561,17 +629,22 @@ news {
     text-align: right; }
 
 .rate {
-  background-color: aqua;
+  background-color: rgba(77, 173, 231, 0.5);
+  width: 30%;
   padding: 10px;
   margin: 5px;
   border-radius: 10px;
-  display: inline-flex; }
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: stretch; }
   .rate .items h4 {
-    border-bottom: 4px solid red;
     text-align: center;
     margin-bottom: 0; }
   .rate span {
     margin: 10px; }
+  .rate hr {
+    width: 90%;
+    border-bottom: 4px solid red; }
 
 /*!
  * animate.css -http://daneden.me/animate

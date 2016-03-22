@@ -1,0 +1,48 @@
+.books {
+  display: inline-flex;
+  // justify-content: space-between;
+  align-items: stretch;
+  flex-wrap: wrap;
+    & .books-items {
+      padding: 4px 4px 4px 4px;
+      margin: 5px;
+      width: 22%;
+      box-shadow: 0 4px 5px rgba(0, 0, 0, 0.23), 0 5px 10px rgba(0, 0, 0, 0.19);
+        &:hover {
+          box-shadow: 0 4px 5px rgba(77, 173, 231, .23), 0 5px 10px rgba(77, 173, 231, .19);
+        }
+      & .title {
+        text-align: center;
+      }
+      & .autor {
+        padding: 4px;
+        border-radius: 3px;
+      }
+      & .link {
+        color: $primary-color-light;
+        text-align: center;
+          & a {
+            background-color: $primary-color-light;
+            padding: 0px 5px 2px 5px;
+            border-radius: 2px;
+            text-decoration: none;
+            cursor: pointer;
+            color: #fff;
+              &:hover {
+                background-color: $primary-color-dark;
+              }
+          }
+      }
+      & .description {
+        border-radius: 3px;
+        padding: 3px;
+      }
+      & img {
+        width: 50%;
+        display: block;
+        margin: 0 auto;
+        margin-top: 4px;
+        margin-bottom: 4px;
+      }
+  }
+}
