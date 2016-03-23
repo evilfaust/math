@@ -2,10 +2,12 @@
 <html lang="ru">
 <head>
 <script src="https://cdn.jsdelivr.net/riot/2.3/riot+compiler.min.js"></script>
+<script src="./node_modules/riot/riot+compiler.js"></script>
+
 <!-- <script src="./node_modules/riot/riot+compiler.min.js"></script> -->
 <!-- LaTeX -->
-<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.5.1/katex.min.css">
-<script src="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.5.1/katex.min.js"></script>
+<!-- <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.5.1/katex.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.5.1/katex.min.js"></script> -->
 
 <link rel="stylesheet" href="./stylesheets/style.css">
 	<meta charset="UTF-8">
@@ -26,8 +28,8 @@
 
 
 <script>
-var html = katex.renderToString("c = \\pm\\sqrt{a^2 + b^2}");
-document.getElementById('math').innerHTML = this.html;
+// var html = katex.renderToString("c = \\pm\\sqrt{a^2 + b^2}");
+// document.getElementById('math').innerHTML = this.html;
 
 
 	riot.mount('fedora')

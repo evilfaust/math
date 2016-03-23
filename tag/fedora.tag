@@ -28,7 +28,7 @@ this.about = news.about
 addani(e) { this.ani = "animated flip" }
 delani(e) { this.ani = null }
 
-	this.nav = [
+this.nav = [
 		{ link: '/About', content: 'About'},
 		{ link: '/Home', content: 'Home' },
 		{ link: '/Book', content: 'Books' },

@@ -519,25 +519,33 @@
     margin-left: 100%; } }
 
 news {
-  display: flex;
-  padding-top: 20px;
-  justify-content: space-between;
-  align-items: stretch; }
+  display: inline-flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding-top: 20px; }
   news .news {
-    padding: 10px;
-    width: 25%;
-    background-color: rgba(77, 173, 231, 0.5);
-    margin: 10px;
-    border-radius: 4px; }
+    flex: 20%;
+    padding: 10px 10px 10px 10px;
+    margin: 5px;
+    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.23); }
+    news .news:hover {
+      box-shadow: 0 0 5px 1px #4dade7; }
     news .news img {
-      border-radius: 4px; }
+      border-radius: 4px;
+      display: block;
+      width: 50%;
+      margin: 0 auto;
+      align-self: flex-end; }
     news .news .title {
-      border: 0 solid #1a7ab4;
-      border-bottom-width: 2px;
+      border-bottom: 2px solid #661177;
       padding-bottom: 4px;
       text-align: center;
       font-size: 18px;
-      color: #1a7ab4; }
+      color: #510d5f; }
+
+@media all and (max-width: 480px) {
+  news {
+    flex-direction: column; } }
 
 .navigation ul {
   display: flex; }
@@ -561,17 +569,19 @@ news {
 
 .books {
   display: inline-flex;
-  align-items: stretch;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  flex-direction: row; }
   .books .books-items {
-    padding: 4px 4px 4px 4px;
+    flex: 20%;
+    padding: 10px 10px 10px 10px;
     margin: 5px;
-    width: 22%;
-    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.23), 0 5px 10px rgba(0, 0, 0, 0.19); }
+    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.23); }
     .books .books-items:hover {
-      box-shadow: 0 4px 5px rgba(77, 173, 231, 0.23), 0 5px 10px rgba(77, 173, 231, 0.19); }
+      box-shadow: 0 0 5px -1px #4dade7; }
     .books .books-items .title {
-      text-align: center; }
+      text-align: center;
+      border-bottom: 2px solid #661177;
+      color: #510d5f; }
     .books .books-items .autor {
       padding: 4px;
       border-radius: 3px; }
@@ -597,6 +607,10 @@ news {
       margin-top: 4px;
       margin-bottom: 4px; }
 
+@media all and (max-width: 480px) {
+  .books {
+    flex-direction: column; } }
+
 .text-underline {
   text-decoration: underline; }
 
@@ -612,7 +626,7 @@ news {
   padding: 20px;
   height: 450px;
   color: #661177;
-  background-image: url(../../images/bg_02.png);
+  background-image: url(../../math/images/bg_02.png);
   background-size: cover;
   background-position: center center;
   border-radius: 20px; }
