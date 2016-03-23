@@ -1,5 +1,6 @@
 <book>
 <div class="books">
+	<div class="title-head"><div class=""> { opts.head }</div></div>
 	<div class="books-items" each={ opts.book }>
 		<div class="title text-title">{ title }</div>
 		<img src={ imgUrl }>

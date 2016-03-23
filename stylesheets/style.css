@@ -569,8 +569,20 @@ news {
 
 .books {
   display: inline-flex;
+  align-items: stretch;
   flex-wrap: wrap;
   flex-direction: row; }
+  .books .title-head {
+    width: 100%;
+    margin-left: 4px;
+    margin-right: 4px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    background-color: #661177;
+    color: #fff;
+    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.23); }
+    .books .title-head:hover {
+      box-shadow: 0 0 5px -1px #4dade7; }
   .books .books-items {
     flex: 20%;
     padding: 10px 10px 10px 10px;
@@ -618,7 +630,7 @@ news {
   font-size: 1.2em;
   font-family: serif; }
 
-.text-center {
+.text-center, .books .title-head {
   text-align: center; }
 
 .about {

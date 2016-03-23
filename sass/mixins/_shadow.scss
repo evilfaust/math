@@ -1,0 +1,6 @@
+@mixin shadow {
+  box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.23);
+    &:hover {
+      box-shadow: 0 0 5px -1px $info-color-light;
+    }
+}
